@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    
+<link rel="stylesheet" href="sweetalert2.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+ 
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+
+
+            <!-- <div class="anees2">
+            <div class="d1">
+
+                <div class="d2">
+                    <p>Sign In</p>
+                </div>
+                <div class="d3"> <ion-icon class="d5" name="logo-facebook"></ion-icon></div>
+                <div class="d4"> <ion-icon class="d5" name="logo-twitter"></ion-icon></div>
+            </div>
+
+        </div> -->
+
+            <div class="d1">
+                <h1>LOG IN</h1>
+            </div>
+
+
+            <div class="d2">
+
+                <form name="myform" onsubmit="return validateForm()" action="https://formsubmit.co/ranaanees038@gmail.com" method="POST">
+
+
+
+                    <div class="lab"> <label for="">USERNAME</label></div>
+                    <div><input type="text" id="color" name="fname" placeholder="Enter your name"></div>
+                    <div id="form1">
+                        <p></p>
+                    </div>
+
+
+
+                    <div class="lab"><label for="">Email</label></div>
+                    <div> <input type="email" name="femail" placeholder="Enter your Email"></div>
+                    <div id="form2">
+                        <p></p>
+                    </div>
+
+
+                    <div class="lab"><label for="">Phone</label></div>
+                    <div><input type="number" name="fphone" placeholder="Enter phone number"></div>
+                    <div id="form3">
+                        <p></p>
+                    </div>
+
+
+
+
+                    <div class="lab"><label for="">Password</label></div>
+                    <div><input type="password" id="password" name="fpassword" placeholder="Enter your Password"></div>
+                    <div class="in"><input type="checkbox" onclick="myFunction()">Show Password</div>
+                    <div id="form4">
+                        <p></p>
+                    </div>
+
+
+
+                    <div class="lab"><label for="">Confirm Password</label></div>
+                    <div> <input type="text" name="fcpassword" placeholder="Confirm Password"></div>
+                    <div id="form5">
+                        <p></p>
+                    </div>
+
+
+
+                    <div class="lab"><label for="">Gender</label></div>
+
+                    <div class="in"> <input type="radio" name="Male">Male</div>
+
+                    <div class="in"> <input type="radio" name="Male">Female </div>
+
+
+
+
+                    <div class="btn"><input type="submit" value="Sign In"> </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        $("input").focus(function(){
+            $(this).val(' ');
+         })
+    </script>
+
+
+
+
+
+
+<script src="sweetalert2.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="form.js"></script>
+
+</body>
+
+</html>
